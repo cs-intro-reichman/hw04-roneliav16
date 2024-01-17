@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class ArrayOps {
     public static void main(String[] args) { // Just do some tests
-        int [] array1 = {1, 2, 6, 6, 10};
+        int [] array1 = {3, 2, 1};
         int [] array2 = {9, 3, 3, 3, 100, 100, 222, 7, 9, 4};
         System.out.println(findMissingInt(array1));
         System.out.println(secondMaxValue(array1));
@@ -148,6 +148,7 @@ public class ArrayOps {
         if (isArraySorted) {
             return true;
         }
+        isArraySorted = true;
         int [] res2 = sortArrayMinToMax(array);
         for(int i = 0; i < array.length; i++) {
             if (!(res2[i] == array[i])) {
