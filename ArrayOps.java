@@ -82,8 +82,6 @@ public class ArrayOps {
     public static boolean containsTheSameElements(int[] array1, int[] array2) {
         int[] res1 = setUnique(array1);
         int[] res2 = setUnique(array2);
-        printArray(res1);
-        printArray(res2);
 
         for(int i = 0; i < res1.length; i++) {
             boolean containsValue = false;
