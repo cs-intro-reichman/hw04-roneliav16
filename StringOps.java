@@ -47,6 +47,9 @@ public class StringOps {
                          }
                         }
             }
+            else {
+                newString += ' ';
+            }
         }
         return newString;
     }
